@@ -7,7 +7,7 @@ import json
 from random import randint
 
 def def_callback(str):
-    print "\nKRIS LOGIN URL: "+str+"\n"
+    print "\nAdhi LOGIN URL: "+str+"\n"
 
 class LINE:
 
