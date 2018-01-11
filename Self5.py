@@ -8,32 +8,32 @@ import time, random, sys, re, os, json, subprocess, threading, string, codecs, r
 from gtts import gTTS
 
 
-cl = LINETCR.LINE() #Luffy
+cl = LINETCR.LINE()
 #cl.login(qr=True)
 cl.login(token="Eo8M4Gc71lI3B1PLfGk5.nqZhqiZgZilGvU4eyth5jq.RWkiHQvrzNJLVb789D+vR+6gdYoDsgDOa5OPMa51LfE=")
 cl.loginResult()
 
-ki = LINETCR.LINE() #Zorro
+ki = LINETCR.LINE()
 #ki.login(qr=True)
 ki.login(token="EnXJYMPRuZKWp81hPsk2.buJLD7JrrngDnMf5qDfqyG.60g8dV2Qm2DALXdsVgdjfN7PLoRXoNEm9dLRphHFgjM=")
 ki.loginResult()
 
-kk = LINETCR.LINE() #Sanji
+kk = LINETCR.LINE()
 #kk.login(qr=True)
 kk.login(token="EoMdoBLVb6MSEr5MXOY2.buJLD7JrrngDnMf5qDfqyG.h+zORBe6mSkcNdRDGy1ly9h1JIGOftJUWep8wTYjtjA=")
 kk.loginResult()
 
-kc = LINETCR.LINE() #Ussop
+kc = LINETCR.LINE()
 #kc.login(qr=True)
-kc.login(token="EomIeskWWuFwLTVRxh59.nuUU5kRRG+fC3Z9YVNv7Qq.N/DtNl1JgmehyWtApa3KBDWNkA2vBvXiOKWBE7eCAsQ=")
+kc.login(token="EomIeskWWuFwiLTVRxh59.nuUU5kRRG+fC3Z9YVNv7Qq.N/DtNl1JgmehyWtApa3KBDWNkA2vBvXiOKWBE7eCAsQ=")
 kc.loginResult()
 
-ks = LINETCR.LINE() #Chooper
+ks = LINETCR.LINE()
 #ks.login(qr=True)
 ks.login(token="EoKrhzfNJPo9WlvAMCqf.9eQsWmyR4F9AFNPZDyQTtW.uY49MnMipZvIZVZwiJ9ehzbtzQ6wsrkT4RjrGPY84bM=")
 ks.loginResult()
 
-satpam = LINETCR.LINE() #
+satpam = LINETCR.LINE() 
 satpam.login(token="EoTrgRBhkTkBuAC6Sqb3.TrVjFf5pyd8D+ZxPusvq0W.dTI0V7C9lgVr3LSqd/5fgNb/g8rSNw17WD30VUtSiUE=")
 #satpam.login(qr=True)
 satpam.loginResult()
@@ -226,7 +226,7 @@ Setgroup ="""��􀸂􀅞└Babang adhi✗┐�􀸂􀅠∆�
 [•]Cleanse
 [•]Ready ah
 [•]Sikat
-👑Hanya Untuk Owner and Admin👑
+👑Tanks For You Team Tcr👑
  -==================-
 "Creator By https://line.me/ti/p/~boy29putra"
 -==================-
@@ -268,7 +268,7 @@ wait = {
     'message':"""тerima Kasih Sudah Menambahkan Aku Jadi Teman 
 Idline:http://line.me/ti/p/~boy29putra""",
     "lang":"JP",
-    "comment":"👉ąµţ๏ℓɨЌ€ By😊\n☆º°˚☆ ��􀸂􀅞└Babang adhi✗┐�􀸂􀅠∆�",
+    "comment":"👉☆º°˚☆ ��􀸂􀅞└Babang adhi✗┐�􀸂􀅠∆�",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
@@ -1146,7 +1146,7 @@ def bot(op):
         if op.type == 24:
             if wait["leaveRoom"] == True:
                 cl.leaveRoom(op.param1)
-        if op.type == 25:
+        if op.type == 26:
             msg = op.message
 
 
@@ -1156,7 +1156,7 @@ def bot(op):
             if msg.contentType == 16:
                 url = msg.contentMetadata("line://home/post?userMid="+mid+"&postId="+"new_post")
                 cl.like(url[25:58], url[66:], likeType=1001)
-        if op.type == 25:
+        if op.type == 26:
             msg = op.message
             if msg.contentType == 13:
                if wait["wblack"] == True:
@@ -1270,7 +1270,7 @@ def bot(op):
                 random.choice(KAC).kickoutFromGroup(msg.to,[midd])
 #===========================================
 
-        if op.type == 25:
+        if op.type == 26:
             msg = op.message
             if msg.contentType == 13:
             	if wait["winvite"] == True:
