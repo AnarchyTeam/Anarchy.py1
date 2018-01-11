@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+#TeamBotAdhi
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
@@ -10,31 +10,31 @@ from gtts import gTTS
 
 cl = LINETCR.LINE()
 #cl.login(qr=True)
-cl.login(token="Eo8M4Gc71lI3B1PLfGk5.nqZhqiZgZilGvU4eyth5jq.RWkiHQvrzNJLVb789D+vR+6gdYoDsgDOa5OPMa51LfE=")
+cl.login(token="")
 cl.loginResult()
 
 ki = LINETCR.LINE()
 #ki.login(qr=True)
-ki.login(token="EnXJYMPRuZKWp81hPsk2.buJLD7JrrngDnMf5qDfqyG.60g8dV2Qm2DALXdsVgdjfN7PLoRXoNEm9dLRphHFgjM=")
+ki.login(token="")
 ki.loginResult()
 
 kk = LINETCR.LINE()
 #kk.login(qr=True)
-kk.login(token="EoMdoBLVb6MSEr5MXOY2.buJLD7JrrngDnMf5qDfqyG.h+zORBe6mSkcNdRDGy1ly9h1JIGOftJUWep8wTYjtjA=")
+kk.login(token="")
 kk.loginResult()
 
 kc = LINETCR.LINE()
 #kc.login(qr=True)
-kc.login(token="EomIeskWWuFwiLTVRxh59.nuUU5kRRG+fC3Z9YVNv7Qq.N/DtNl1JgmehyWtApa3KBDWNkA2vBvXiOKWBE7eCAsQ=")
+kc.login(token="")
 kc.loginResult()
 
 ks = LINETCR.LINE()
 #ks.login(qr=True)
-ks.login(token="EoKrhzfNJPo9WlvAMCqf.9eQsWmyR4F9AFNPZDyQTtW.uY49MnMipZvIZVZwiJ9ehzbtzQ6wsrkT4RjrGPY84bM=")
+ks.login(token="")
 ks.loginResult()
 
 satpam = LINETCR.LINE() 
-satpam.login(token="EoTrgRBhkTkBuAC6Sqb3.TrVjFf5pyd8D+ZxPusvq0W.dTI0V7C9lgVr3LSqd/5fgNb/g8rSNw17WD30VUtSiUE=")
+satpam.login(token="")
 #satpam.login(qr=True)
 satpam.loginResult()
 
