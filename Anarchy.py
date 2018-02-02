@@ -16,6 +16,8 @@ sys.setdefaultencoding('utf-8')
 helpMessage ="""
 A⃣n⃣a⃣r⃣c⃣h⃣y⃣ T⃣e⃣a⃣m⃣ B⃣o⃣t⃣s⃣  
 ╔══════════════════
+╠[♫]Me
+╠[♫]Myid
 ╠[♫]Cctv [Start Check Sider]
 ╠[♫]Ciduk [Liat Hasil Sider]
 ╠[♫]Creator [Melihat Creator Bot]
@@ -78,6 +80,11 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
     if to not in messageReq:
         messageReq[to] = -1
     messageReq[to] += 1
+
+def waktu(secs):
+    mins, secs = divmod(secs,60)
+    hours, mins = divmod(mins,60)
+    return '%02d Jam %02d Menit %02d Detik' % (hours, mins, secs)
 
 def bot(op):
     try:
@@ -329,7 +336,7 @@ def bot(op):
                   cl.sendText(msg.to,"The stafflist is empty")
               else:
                   cl.sendText(msg.to,"Tunggu...")
-                  mc = "||Admin One Piece Bot||\n=====================\n"
+                  mc = "||Admin ANARCHY||\n=====================\n"
                   for mi_d in admin:
                       mc += "••>" +cl.getContact(mi_d).displayName + "\n"
                   cl.sendText(msg.to,mc)
@@ -405,6 +412,11 @@ def bot(op):
                 msg.contentMetadata = {'mid': mid}
                 cl.sendMessage(msg)
                 
+            elif msg.text.lower() == 'runtime':
+                eltime = time.time() - mulai
+                van = "Bot sudah berjalan selama "+waktu(eltime)
+                cl.sendText(msg.to,van)
+
             elif msg.text in ["Me"]:
                 msg.contentType = 13
                 msg.contentMetadata = {'mid': msg.from_}
