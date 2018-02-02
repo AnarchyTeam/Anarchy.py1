@@ -7,7 +7,7 @@ import json
 from random import randint
 
 def def_callback(str):
-    print "\nAdhi LOGIN URL: "+str+"\n"
+    print "\nAnarchy LOGIN URL: "+str+"\n"
 
 class LINE:
 
@@ -443,5 +443,5 @@ class LINE:
       print("╔ Mid Kamu -> " + prof.mid)
       print("╠ Nama Akun -> " + prof.displayName)
       print("╠ AuthToken Kamu -> " + self.authToken)
-      print("╠ Cert Kamu -> " + self.cert if self.cert is not None else "╠════jkp4678═════════")
-      print("═════BABANG ADHI═══════")
+      print("╠ Cert Kamu -> " + self.cert if self.cert is not None else "╠════[ ANARCHY LOGIN SUKSESS ]═════════")
+      print("═════[ NEW TEAM ANARCHY ]═══════")
