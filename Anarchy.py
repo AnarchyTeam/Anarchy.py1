@@ -6,7 +6,7 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re,os,subprocess
 
 cl = LINETCR.LINE() #Luffy
-cl.login(token='ISI TOKEN KAMU')
+cl.login(token='EpF225ZcPYPZnUV80WL4.V5Kns0dIiMAgkfsSwJGeDa.Yl7BZTJfsLBBVR9DdnJsr6mw0ZIUI8fDnxU44W7SiBg=')
 cl.loginResult()
 
 print "Anarchy"
