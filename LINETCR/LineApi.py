@@ -242,6 +242,10 @@ class LINE:
               raise Exception('Upload voice failure.')
           return True
 
+  def waktu(secs):
+     mins, secs = divmod(secs,60)
+     hours, mins = divmod(mins,60)
+     return '%02d Jam %02d Menit %02d Detik' % (hours, mins, secs)
 
   def sendEvent(self, messageObject):
         return self.Talk.client.sendEvent(0, messageObject)
