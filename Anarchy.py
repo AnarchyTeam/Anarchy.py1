@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
 
-
-
-#JANGAN UBAH SCRIPT NYA , KALO MAU UBAH IZIN DULU KE http://line.me/ti/p/~justferians !!!!!!!!
-#ISI TOKEN KAMU DI GANTI SAMA TOKEN AKUN KAMU YANG MAU DIJADIIN BOT SIDER
-
 import LINETCR
 from LINETCR.lib.curve.ttypes import *
 from datetime import datetime
@@ -18,22 +13,22 @@ print "login Bot Ferians Succes"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-helpMessage ="""-==================-
-     Ferians Bot Sider
--==================-
-[•]Cctv [Start Check Sider]
-[•]Ciduk [Liat Hasil Sider]
-[•]Creator [Melihat Creator Bot]
-[•]@bye/Bot out [Untuk Keluarkan Bot]
--==================-
-    By Ferians Bot 
--==================-
+helpMessage ="""
+A⃣n⃣a⃣r⃣c⃣h⃣y⃣ T⃣e⃣a⃣m⃣ B⃣o⃣t⃣s⃣  
+╔══════════════════
+╠[♫]Cctv [Start Check Sider]
+╠[♫]Ciduk [Liat Hasil Sider]
+╠[♫]Creator [Melihat Creator Bot]
+╠[♫]@bye
+╠══════════════════
+╠Anarchy Team Bots
+╚══════════════════
 """
 KAC=[cl]
 mid = cl.getProfile().mid 
 
 Bots=[mid]
-owner=["u7cd68a1bc3cfa0ae3fcdb7907e4d307d"]
+owner=["uc77fd25b59f6e563d84f1334f3fed10b"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -41,7 +36,7 @@ wait = {
     'leaveRoom':False,
     'timeline':False,
     'autoAdd':False,
-    'message':"""тerima Kasih Sudah Menambahkan Aku Jadi Teman""",
+    'message':"""Thanks For Add Me Creator By Anarchy Team""",
     "lang":"JP",
     "comment":"Thanks for add me",
     "commentOn":False,
@@ -96,7 +91,8 @@ def bot(op):
                     cl.sendText(op.param1,str(wait["message"]))
         if op.type == 13:
             cl.acceptGroupInvitation(op.param1)
-            cl.sendText(op.param1, "Ketik Help Untuk Liat Menu")
+            cl.sendText(op.param1, "Wajib Add OA Di Bawah \n\n Ketik [ Help ] Untuk Melihat Command Bots")
+            cl.sendText(msg.contentMetadata = {'mid': 'uf8c45b9ad0e8027405bdda71534a1eed'}
         #------Protect Group Kick start------#
         if op.type == 11:
           if wait["Protectgr"] == True:
@@ -433,9 +429,8 @@ def bot(op):
 				cl.acceptGroupInvitationByTicket(group.mid,ticket_id)
 				cl.sendText(msg.to,"Sukses join ke grup %s" % str(group.name))
                      
-            elif "Info Group" == msg.text:
+            elif "Ginfo" == msg.text:
               if msg.toType == 2:
-                if msg.from_ in admin:
                   ginfo = cl.getGroup(msg.to)
                   try:
                     gCreator = ginfo.creator.displayName
@@ -459,8 +454,7 @@ def bot(op):
                   else:
                     cl.sendText(msg.to,"Not for use less than group")
                 
-            elif "My mid" == msg.text:
-              if msg.from_ in admin:
+            elif "Myid" == msg.text:
                 random.choice(KAC).sendText(msg.to, msg.from_)
             elif "Mid Bot" == msg.text:
               if msg.from_ in admin:
@@ -640,7 +634,7 @@ def bot(op):
       #-------------Creator------------------#
             elif msg.text in ["Creator"]:
               msg.contentType = 13
-              msg.contentMetadata = {'mid': 'u7cd68a1bc3cfa0ae3fcdb7907e4d307d'}
+              msg.contentMetadata = {'mid': 'uc77fd25b59f6e563d84f1334f3fed10b'}
               cl.sendMessage(msg)
               cl.sendText(msg.to,"Itu Kak Creator Bot Kami")
       #-------------Finish----------------#
