@@ -9,7 +9,7 @@ cl = LINETCR.LINE() #Luffy
 cl.login(token='ISI TOKEN KAMU')
 cl.loginResult()
 
-print "login Bot Ferians Succes"
+print "Anarchy"
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
@@ -20,6 +20,7 @@ A⃣n⃣a⃣r⃣c⃣h⃣y⃣ T⃣e⃣a⃣m⃣ B⃣o⃣t⃣s⃣
 ╠[♫]Ciduk [Liat Hasil Sider]
 ╠[♫]Creator [Melihat Creator Bot]
 ╠[♫]@bye
+╠[♫]Ginfo
 ╠══════════════════
 ╠Anarchy Team Bots
 ╚══════════════════
